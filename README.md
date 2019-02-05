@@ -88,9 +88,24 @@ func main() {
 }
 ```
 
+> Output
+
 ```bash
 Rishikeshs-MacBook-Air:basic hygull$ go run variables.go 
 1729 67 34.56 3.14
 Rishikesh Agrawani, 26
 
 ```
+
+
+<h3 id='references'>References</h3>
+
+The following are the list of urls of websites where you can go and try to learn and clear concepts of Golang and these are really excellent to teach and make you understand Go as I have experienced and still experiencing.
+
+- [x] [https://tour.golang.org/welcome/1](https://tour.golang.org/welcome/1)
+
+- [x] [https://www.dotnetperls.com/#go](https://www.dotnetperls.com/#go)
+
+- [x] [https://www.tutorialspoint.com/go/index.htm](https://www.tutorialspoint.com/go/index.htm)
+
+- [x] [https://gobyexample.com](https://gobyexample.com)
