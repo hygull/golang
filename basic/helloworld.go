@@ -1,7 +1,7 @@
 /**
 	{
 		"created": "5 Feb 2019, Tue",
-		"aim": "Writing a simple hello world program"
+		"aim": "Writing a simple hello world program",
 		"codedBy": "Rishikesh Agrawani"
 	}
 */
