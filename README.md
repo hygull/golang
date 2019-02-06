@@ -99,6 +99,38 @@ Rishikesh Agrawani, 26
 
 ```
 
+<h3 id='3'>Working with strings</h3>
+
+```go
+/**
+    {
+        "created": "6 Feb 2019, Wed",
+        "aim": "Working with strings",
+        "codedBy": "Rishikesh Agrawani"
+    }
+*/
+
+package main
+
+import "fmt"
+
+func main() {
+    var fullname string = "Rishikesh Agrawani" // creating string
+    city := "Bangalore" // direct way of creating string
+
+    fmt.Printf("My fullname is %s and I live in %s\n", fullname, city)
+}
+```
+
+> Output
+
+```bash
+Rishikeshs-MacBook-Air:basic hygull$ go run strings.go 
+My fullname is Rishikesh Agrawani and I live in Bangalore
+
+```
+
+
 
 <h3 id='references'>References</h3>
 
