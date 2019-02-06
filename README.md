@@ -83,7 +83,7 @@ func main() {
     // creating 2/more variables in a single statement (using 3rd approach)
     fullname, age := "Rishikesh Agrawani", 26
 
-    // priting values of all variables
+    // printing values of all variables
     fmt.Println(a, b, c, d) // 1729 67 34.56 3.14
     fmt.Printf("%s, %d\n", fullname, age) // Rishikesh Agrawani, 26
 }
@@ -102,12 +102,20 @@ Rishikesh Agrawani, 26
 
 <h3 id='references'>References</h3>
 
-The following are the list of urls of websites where you can go and try to learn and clear concepts of Golang and these are really excellent to teach and make you understand Go as I have experienced and still experiencing.
+The following are the list of urls of websites where you can go and try to learn & clear concepts of Golang.
 
-- [x] [https://tour.golang.org/welcome/1](https://tour.golang.org/welcome/1)
+These are really excellent to teach and make you understand Go as I have experienced and still I'm experiencing.
 
-- [x] [https://www.dotnetperls.com/#go](https://www.dotnetperls.com/#go)
+- [x] A tour of Golang - [https://tour.golang.org/welcome/1](https://tour.golang.org/welcome/1)
 
-- [x] [https://www.tutorialspoint.com/go/index.htm](https://www.tutorialspoint.com/go/index.htm)
+- [x] Dotnetperls - [https://www.dotnetperls.com/#go](https://www.dotnetperls.com/#go)
 
-- [x] [https://gobyexample.com](https://gobyexample.com)
+- [x] Tutorialspoint - [https://www.tutorialspoint.com/go/index.htm](https://www.tutorialspoint.com/go/index.htm)
+
+- [x] GoByExample - [https://gobyexample.com](https://gobyexample.com)
+
+- [x] How to write Go code - [https://golang.org/doc/code.html](https://golang.org/doc/code.html)
+
+- [x] Code organization - [https://golang.org/doc/code.html#Organization](https://golang.org/doc/code.html#Organization)
+
+- [x] GOPATH setting - [https://github.com/golang/go/wiki/SettingGOPATH](https://github.com/golang/go/wiki/SettingGOPATH)

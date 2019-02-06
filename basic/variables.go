@@ -29,7 +29,7 @@ func main() {
     // creating 2/more variables in a single statement (using 3rd approach)
     fullname, age := "Rishikesh Agrawani", 26
 
-    // priting values of all variables
+    // printing values of all variables
     fmt.Println(a, b, c, d) // 1729 67 34.56 3.14
     fmt.Printf("%s, %d\n", fullname, age) // Rishikesh Agrawani, 26
 }
