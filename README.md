@@ -6,6 +6,31 @@
 
 + provides inbuilt support for Garbage collection and supports concurrent programming.
 
+<h2 id='features'> Features</h2> 
+
++ Compilation time is fast.
+
++ Inbuilt concurrency support. 
+
++ Programs are simple, concise and safe.
+
++ Production of statically linked native binaries without external dependencies.
+
++ Support for environment adpting patterns similar to dynamic languages (e.g. x := 0).
+
+<h2 id='tokens'>Tokens in Golang</h2>
+
+is either 
+
++ a keyword (`fmt`, `import` etc.)
+
++ an identifier (`fullname`, `age`, `GetAge` etc.)
+
++ a string literal (`"Rishikesh Agrawani"`, `"Twenty Six"`)
+
++ a constant (`26`, `3.14` etc.)
+
++ a symbol (`+`, `(`, `}` etc.)
 
 <h2 id='examples'> Examples</h2>
 
