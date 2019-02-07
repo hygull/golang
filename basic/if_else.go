@@ -25,7 +25,7 @@ func main() {
 	message := "My first name %s contains"
 	message2 := "than %d characters"
 
-	if( length > 10) {
+	if( length > 10 ) {
 		fmt.Printf(fmt.Sprintf("%s greater %s\n", message, message2), firstName, length)
 	} else {
 		fmt.Printf(fmt.Sprintf("%s less %s\n", message, message2), firstName, length)

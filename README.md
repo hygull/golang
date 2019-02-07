@@ -18,6 +18,9 @@
 
 + Support for environment adpting patterns similar to dynamic languages (e.g. x := 0).
 
+<!-- Gopher image -->
+![Gopher](./images/if-else-go-read-book.jpg)
+
 <h2 id='tokens'>Tokens in Golang</h2>
 
 is either 
@@ -155,7 +158,10 @@ My fullname is Rishikesh Agrawani and I live in Bangalore
 
 ```
 
-<h3 id='if-else'>Working with if else statements</h3>
+<h3 id='4'>Working with if else statements</h3>
+
+<!-- If-else image -->
+![If-else](./images/if-else-statement-flow-chart.png)
 
 ```go
 /**
@@ -185,7 +191,7 @@ func main() {
     message := "My first name %s contains"
     message2 := "than %d characters"
 
-    if( length > 10) {
+    if( length > 10 ) {
         fmt.Printf(fmt.Sprintf("%s greater %s\n", message, message2), firstName, length)
     } else {
         fmt.Printf(fmt.Sprintf("%s less %s\n", message, message2), firstName, length)
@@ -216,6 +222,86 @@ My first name Rishikesh contains less than 9 characters
 I am in ground floor
 
 ```
+<h3 id='5'>Working with loops (3 basic forms)</h3>
+
+```go
+/**
+    {
+        "created": "7 Feb 2019, Thu",
+        "aim": "Working on loops (3 basic forms)",
+        "codedBy": "Rishikesh Agrawani"
+    }
+*/
+
+package main
+
+import "fmt"
+
+func main() {
+    // for loop - 1st form
+    for i := 1; i <= 3; i++ {
+        fmt.Println(i)
+    }
+
+    fmt.Println() // new line
+
+    // for loop - 2nd form
+    j := 1
+    for j <= 3 {
+        fmt.Println(j + 2)
+        j++
+    }
+
+    fmt.Println() // new line
+
+    // for loop - 3rd form
+    arr := [5]int{1, 4, 5, 6, 67} // an array of integers of 5 elements 
+    for index, item := range arr {
+        fmt.Println(index, item) 
+    }
+
+    fmt.Println() // new line
+
+    // Nested for loop
+    for i := 1; i <= 4; i = i + 2 { // i => 1, 3
+        for j := 1; j <= 4; j += 2 { // j => 1, 3
+            fmt.Println(i + j) // 1 + 1, 1 + 3 | 3 + 1, 3 + 3 => 2, 4 | 4, 6
+        }
+    } 
+}
+
+```
+
+> Output
+
+```bash
+Rishikeshs-MacBook-Air:basic hygull$ go run loops.go 
+1
+2
+3
+
+3
+4
+5
+
+0 1
+1 4
+2 5
+3 6
+4 67
+
+2
+4
+4
+6
+
+```
+
+
+
+
+
+
 
 <h3 id='references'>References</h3>
 
