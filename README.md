@@ -155,7 +155,67 @@ My fullname is Rishikesh Agrawani and I live in Bangalore
 
 ```
 
+<h3 id='if-else'>Working with if else statements</h3>
 
+```go
+/**
+    {
+        "created": "7 Feb 2019, Thu",
+        "aim": "Working with if else statements",
+        "codedBy": "Rishikesh Agrawani"
+    }
+*/
+
+package main
+
+import "fmt"
+
+func main() {
+    var age = 26
+    var maxAge int = 100
+    var firstName string = "Rishikesh"
+
+    // If statement
+    if( age < maxAge ) {
+        fmt.Printf("I am still young as my age is %d and it is <= %d\n", age, maxAge)
+    }
+
+    // If else statement
+    length := len(firstName)
+    message := "My first name %s contains"
+    message2 := "than %d characters"
+
+    if( length > 10) {
+        fmt.Printf(fmt.Sprintf("%s greater %s\n", message, message2), firstName, length)
+    } else {
+        fmt.Printf(fmt.Sprintf("%s less %s\n", message, message2), firstName, length)
+    }
+
+    // If else...if else statement
+    var a, b, c = 12, 67, 87
+
+    if( a > b ) { // Evaluates to false
+        fmt.Printf("I am in 2nd floor")
+    } else if( a > c ) { // Evaluates to false
+        fmt.Printf("I am in 1st floor")
+    } else {
+        fmt.Printf("I am in ground floor") // So, it will be executed
+    }
+
+    fmt.Printf("\n")
+}
+
+```
+
+> Output
+
+```bash
+Rishikeshs-MacBook-Air:basic hygull$ go run if_else.go 
+I am still young as my age is 26 and it is <= 100
+My first name Rishikesh contains less than 9 characters
+I am in ground floor
+
+```
 
 <h3 id='references'>References</h3>
 
