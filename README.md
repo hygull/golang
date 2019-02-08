@@ -263,9 +263,9 @@ func main() {
     fmt.Println() // new line
 
     // Nested for loop
-    for i := 1; i <= 4; i = i + 2 { // i => 1, 3
+    for i := 1; i <= 4; i = i + 2 {  // i => 1, 3
         for j := 1; j <= 4; j += 2 { // j => 1, 3
-            fmt.Println(i + j) // 1 + 1, 1 + 3 | 3 + 1, 3 + 3 => 2, 4 | 4, 6
+            fmt.Println(i + j)       // 1 + 1, 1 + 3 | 3 + 1, 3 + 3 => 2, 4 | 4, 6
         }
     } 
 }
@@ -297,10 +297,62 @@ Rishikeshs-MacBook-Air:basic hygull$ go run loops.go
 
 ```
 
+<h3 id='json-enc'>Working with encoding of struct to JSON</h3>
 
+```go
+/**
+    {
+        "created": "8 Feb 2019, Fri",
+        "aim": "Working with encoding of struct to JSON",
+        "codedBy": "Rishikesh Agrawani"
+        "reference": "https://golang.org/pkg/encoding/json/#MarshalIndent"
+    }
+*/
 
+package main
 
+import "fmt"
+import "encoding/json"  
 
+func main() {
+    // Defining a struture
+    type Person struct {
+        Name string         `json:"name"`
+        Age int8            `json:"age"`
+        Profession string   `json:"profession"`
+        Address string      `json:"address"`
+        Languages []string  `json:"languages"`
+    }
+
+    // Initializing structure
+    rishikesh := Person{
+                    Name: "Rishikesh",
+                    Age: 26, Profession: "Python/Django developer",
+                    Address: "Bangalore, India",
+                    Languages: []string{"Python", "JavaScript", "Golang"}, // , is must here
+                }
+
+    details, _ := json.MarshalIndent(&rishikesh, "", "\t") // pointer to struct, prefix, indent
+    fmt.Println(string(details))
+}
+
+```
+
+```bash
+Rishikeshs-MacBook-Air:basic hygull$ go run json_encoding.go 
+{
+    "name": "Rishikesh",
+    "age": 26,
+    "profession": "Python/Django developer",
+    "address": "Bangalore, India",
+    "languages": [
+        "Python",
+        "JavaScript",
+        "Golang"
+    ]
+}
+
+```
 
 
 <h3 id='references'>References</h3>
