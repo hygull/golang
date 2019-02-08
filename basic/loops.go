@@ -36,9 +36,9 @@ func main() {
 	fmt.Println() // new line
 
 	// Nested for loop
-	for i := 1; i <= 4; i = i + 2 { // i => 1, 3
+	for i := 1; i <= 4; i = i + 2 {  // i => 1, 3
 		for j := 1; j <= 4; j += 2 { // j => 1, 3
-			fmt.Println(i + j) // 1 + 1, 1 + 3 | 3 + 1, 3 + 3 => 2, 4 | 4, 6
+			fmt.Println(i + j)       // 1 + 1, 1 + 3 | 3 + 1, 3 + 3 => 2, 4 | 4, 6
 		}
 	} 
 }
