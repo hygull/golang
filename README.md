@@ -427,7 +427,48 @@ map[age:26 profession:Python/Django developer company:MoneyBloom languages:[Pyth
 
 ```
 
+<h3 id='cmd-args'>Working with command line arguments</h3>
 
+```go
+/**
+    {
+        "created": "9 Feb 2019, Sat",
+        "aim": "Working with command line arguments",
+        "codedBy": "Rishikesh Agrawani"
+    }
+*/
+
+package main
+
+import "fmt"
+import "os"
+
+func main() {
+    // Getting raw command line arguments
+    rawArguments := os.Args
+    fmt.Println(rawArguments)
+
+    // Getting list of supplied arguments from command line
+    suppliedArguments := rawArguments[1:]
+    fmt.Println(suppliedArguments)
+}
+
+```
+
+> Output
+
+```bash
+Rishikeshs-MacBook-Air:basic hygull$ go run command_line_args.go 67 56
+[/var/folders/_h/d17s0sg11q74f68sxqnvg1nm0000gn/T/go-build148913680/b001/exe/command_line_args 67 56]
+[67 56]
+Rishikeshs-MacBook-Air:basic hygull$ 
+Rishikeshs-MacBook-Air:basic hygull$ go build command_line_args.go 
+Rishikeshs-MacBook-Air:basic hygull$ ./command_line_args 67 56
+[./command_line_args 67 56]
+[67 56]
+Rishikeshs-MacBook-Air:basic hygull$ 
+
+```
 
 <h3 id='references'>References</h3>
 
