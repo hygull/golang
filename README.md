@@ -705,3 +705,11 @@ These are really excellent to teach and make you understand Go as I have experie
 - [x] Code organization - [https://golang.org/doc/code.html#Organization](https://golang.org/doc/code.html#Organization)
 
 - [x] GOPATH setting - [https://github.com/golang/go/wiki/SettingGOPATH](https://github.com/golang/go/wiki/SettingGOPATH)
+
+- [x] Slides -[https://talks.golang.org/2013/bestpractices.slide#1](https://talks.golang.org/2013/bestpractices.slide#1)
+
+- [x] Effective Go - [https://golang.org/doc/effective_go.html](https://golang.org/doc/effective_go.html)
+
+- [x] Go best practices - Error handling [https://medium.com/@sebdah/go-best-practices-error-handling-2d15e1f0c5ee](https://medium.com/@sebdah/go-best-practices-error-handling-2d15e1f0c5ee)
+
+- Top 30 Go tutorials - [https://stackify.com/learn-go-tutorials/](https://stackify.com/learn-go-tutorials/)
