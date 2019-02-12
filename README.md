@@ -684,7 +684,61 @@ Salary:  5e+06
 
 ```
 
+<h3 id="maps">Working with maps in Golang</h3>
 
+```go
+/**
+    {
+        "created": "12 Feb 2019, Tue",
+        "aim": "Working with maps in Golang",
+        "codedBy": "Rishikesh Agrawani"
+    }
+*/
+
+package main
+
+import "fmt"
+
+func main() {
+    // Creating a map (string as keys, integers as values)
+
+    /*** 1st way ***/
+    numbers := make(map[string]int) // Unordered data structure
+
+    numbers["one"] = 1
+    numbers["two"] = 2
+    numbers["ten"] = 10
+    numbers["three"] = 3
+    fmt.Println(numbers)
+
+    // Deleting 3rd entry from the map
+    delete(numbers, "ten")
+    fmt.Println(numbers)
+
+    // Accessing entries
+    fmt.Println(numbers["one"])
+    val, exists := numbers["two"] // Here, return arguments `exists` is optional 
+    fmt.Println(val, exists)
+
+    /*** 2nd way ***/
+    cities := map[string]string{"city1": "Bangalore", "city2": "Raipur", "city3": "Kondagaon"}
+    fmt.Println(cities)
+    fmt.Println(cities["city1"])
+}
+
+```
+
+> Output
+
+```bash
+Rishikeshs-MacBook-Air:basic hygull$ go run maps.go 
+map[one:1 two:2 ten:10 three:3]
+map[one:1 two:2 three:3]
+1
+2 true
+map[city2:Raipur city3:Kondagaon city1:Bangalore]
+Bangalore
+```
 
 <h3 id='references'>References</h3>
 
@@ -705,3 +759,13 @@ These are really excellent to teach and make you understand Go as I have experie
 - [x] Code organization - [https://golang.org/doc/code.html#Organization](https://golang.org/doc/code.html#Organization)
 
 - [x] GOPATH setting - [https://github.com/golang/go/wiki/SettingGOPATH](https://github.com/golang/go/wiki/SettingGOPATH)
+
+- [x] Slides -[https://talks.golang.org/2013/bestpractices.slide#1](https://talks.golang.org/2013/bestpractices.slide#1)
+
+- [x] Effective Go - [https://golang.org/doc/effective_go.html](https://golang.org/doc/effective_go.html)
+
+- [x] Go best practices - Error handling [https://medium.com/@sebdah/go-best-practices-error-handling-2d15e1f0c5ee](https://medium.com/@sebdah/go-best-practices-error-handling-2d15e1f0c5ee)
+
+- Top 30 Go tutorials - [https://stackify.com/learn-go-tutorials/](https://stackify.com/learn-go-tutorials/)
+
+- Append strings in Golang - [https://christopher.su/notes/go/append-strings/](https://christopher.su/notes/go/append-strings/)
