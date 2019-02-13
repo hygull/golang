@@ -668,7 +668,8 @@ func main() {
 
 > Output
 
-```bash
+<pre>
+<code>
 Rishikeshs-MacBook-Air:basic hygull$ go run interfaces.go 
 {{Malinikesh Agrawani 22 [Reading Books Watching TV Cooking]} Govt. Nagarjuna Science college, Raipur}
 Fullname: Malinikesh Agrawani
@@ -681,8 +682,8 @@ Fullname: Raghvendra Thakur
 Age: 26
 Interests: [Programming Reading Books Watching animated movies Writing hindi/english poems]
 Salary:  5e+06 
-
-```
+</code>
+</pre>
 
 <h3 id="maps">Working with maps in Golang</h3>
 
@@ -749,7 +750,7 @@ Bangalore
 ```go
 /**
     {
-        "created": "13 Feb 2019, ",
+        "created": "13 Feb 2019, Wed",
         "aim": "Use of slice data structure in Golang",
         "codedBy": "Rishikesh Agrawani"
         "references": [
