@@ -742,6 +742,10 @@ Bangalore
 
 <h3 id="slices">Use of slice data structure in Golang</h3>
 
+| Go slices, length, capacity | slicing example |
+| --- | --- |
+| ![golang-slices-length-capacity.jpg](./images/golang-slices-length-capacity.jpg) | ![slice-example.png](./images/slice-example.png)|
+
 ```go
 /**
     {
@@ -803,7 +807,7 @@ func main() {
 
     // Appending all villages to cities (assume these villages turned to cities)
     cities = append(cities, villages...)
-    fmt.Println("After addition of 3 more villages(in cities): ", cities)
+    fmt.Println("After addition of 2 more villages(in cities): ", cities)
     printCapacityAndLength(cities)
 
     // Slicing 
@@ -847,7 +851,7 @@ Case 2, []string
 After addition of 3 more cities:  [Bangalore Raipur Kondagaon Bilaspur Gurgaon Silicon Valley Hyderabad]
 Case 2, []string
 8 7
-After addition of 3 more villages(in cities):  [Bangalore Raipur Kondagaon Bilaspur Gurgaon Silicon Valley Hyderabad Bedagaon Badedongar]
+After addition of 2 more villages(in cities):  [Bangalore Raipur Kondagaon Bilaspur Gurgaon Silicon Valley Hyderabad Bedagaon Badedongar]
 Case 2, []string
 16 9
 First 3 cities:  [Bangalore Raipur Kondagaon]
@@ -891,6 +895,6 @@ These are really excellent to teach and make you understand Go as I have experie
 
 - [x] Go best practices - Error handling [https://medium.com/@sebdah/go-best-practices-error-handling-2d15e1f0c5ee](https://medium.com/@sebdah/go-best-practices-error-handling-2d15e1f0c5ee)
 
-- Top 30 Go tutorials - [https://stackify.com/learn-go-tutorials/](https://stackify.com/learn-go-tutorials/)
+- [x] Top 30 Go tutorials - [https://stackify.com/learn-go-tutorials/](https://stackify.com/learn-go-tutorials/)
 
-- Append strings in Golang - [https://christopher.su/notes/go/append-strings/](https://christopher.su/notes/go/append-strings/)
+- [x] Append strings in Golang - [https://christopher.su/notes/go/append-strings/](https://christopher.su/notes/go/append-strings/)
