@@ -668,7 +668,7 @@ func main() {
 
 > Output
 
-Visit [here](./docs/markdowns/interfaces-output.md) to see the output.
+Visit [here](./docs/markdowns/interfaces-output.txt) to see the output.
 
 <h3 id="maps">Working with maps in Golang</h3>
 
