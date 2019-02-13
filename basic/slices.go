@@ -1,6 +1,6 @@
 /**
 {
-	"created": "13 Feb 2019, ",
+	"created": "13 Feb 2019, Wed",
 	"aim": "Use of slice data structure in Golang",
 	"codedBy": "Rishikesh Agrawani"
 	"references": [
