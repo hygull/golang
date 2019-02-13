@@ -782,6 +782,9 @@ func main() {
                 "Kondagaon", "Bilaspur",
             }
 
+    // Printing slice
+    fmt.Println(cities)
+
     // Calculating total number of cities (strings) in slice
     fmt.Println("Total cities: ", len(cities))
     printCapacityAndLength(cities)
@@ -792,6 +795,7 @@ func main() {
     printCapacityAndLength(cities)
 
     cities = append(cities, "Silicon Valley", "Hyderabad")
+    fmt.Println("After addition of 3 more cities: ", cities)
     printCapacityAndLength(cities)
 
     // Creating another slice of villages
@@ -799,6 +803,7 @@ func main() {
 
     // Appending all villages to cities (assume these villages turned to cities)
     cities = append(cities, villages...)
+    fmt.Println("After addition of 3 more villages(in cities): ", cities)
     printCapacityAndLength(cities)
 
     // Slicing 
@@ -833,13 +838,16 @@ func main() {
 
 ```bash
 Rishikeshs-MacBook-Air:golang hygull$ go run basic/slices.go 
+[Bangalore Raipur Kondagaon Bilaspur]
 Total cities:  4
 Case 2, []string
 4 4
 Case 2, []string
 8 5
+After addition of 3 more cities:  [Bangalore Raipur Kondagaon Bilaspur Gurgaon Silicon Valley Hyderabad]
 Case 2, []string
 8 7
+After addition of 3 more villages(in cities):  [Bangalore Raipur Kondagaon Bilaspur Gurgaon Silicon Valley Hyderabad Bedagaon Badedongar]
 Case 2, []string
 16 9
 First 3 cities:  [Bangalore Raipur Kondagaon]
