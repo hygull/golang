@@ -668,7 +668,19 @@ func main() {
 
 > Output
 
-Visit [here](./docs/markdowns/interfaces-output.txt) to see the output.
+    Rishikeshs-MacBook-Air:basic hygull$ go run interfaces.go 
+    {{Malinikesh Agrawani 22 [Reading Books Watching TV Cooking]} Govt. Nagarjuna Science college, Raipur}
+    Fullname: Malinikesh Agrawani
+    Age: 22
+    Interests: [Reading Books Watching TV Cooking]
+    School:  Govt. Nagarjuna Science college, Raipur 
+
+    {{Raghvendra Thakur 26 [Programming Reading Books Watching animated movies Writing hindi/english poems]} 5e+06}
+    Fullname: Raghvendra Thakur
+    Age: 26
+    Interests: [Programming Reading Books Watching animated movies Writing hindi/english poems]
+    Salary:  5e+06
+
 
 <h3 id="maps">Working with maps in Golang</h3>
 
@@ -854,7 +866,82 @@ Case 1, []int
 
 ```
 
+<h3 id="break">Using break statement in Go</h3>
 
+![break.jpg](./images/break-hygull.jpg)
+
+```go
+/**
+{
+    "created": "14 Feb 2019, ",
+    "aim": "Using break statement in Golang",
+    "codedBy": "Rishikesh Agrawani"
+}
+*/
+
+package main
+
+import "fmt"
+
+func printNumberPairs(useBreak bool) {
+    i := 1
+    // Outer for loop
+    for i <= 5 {
+        j := 1
+        // Inner for loop
+        for j <= 5 {
+            if useBreak {
+                if j == 4 {
+                    break
+                }
+            }
+            fmt.Print("(", i, j, ")", " ")
+
+            j += 1 // += operator increments value of j by 1
+        }
+        fmt.Println()
+        i++ // Post increment of value of i by 1
+    }
+}
+
+func main() {
+    userBreaks := []bool{true, false}
+    var msg string = ""
+
+    for index, useBreak := range userBreaks {
+        if index == 1 {
+            msg = "without "
+        }
+
+        msg += "using break statement"
+        fmt.Println(msg)
+
+        printNumberPairs(useBreak)
+        fmt.Println()
+    }
+}
+
+```
+
+> Output
+
+```bash
+Rishikeshs-MacBook-Air:basic hygull$ go run break.go 
+using break statement
+(1 1) (1 2) (1 3) 
+(2 1) (2 2) (2 3) 
+(3 1) (3 2) (3 3) 
+(4 1) (4 2) (4 3) 
+(5 1) (5 2) (5 3) 
+
+without using break statement
+(1 1) (1 2) (1 3) (1 4) (1 5) 
+(2 1) (2 2) (2 3) (2 4) (2 5) 
+(3 1) (3 2) (3 3) (3 4) (3 5) 
+(4 1) (4 2) (4 3) (4 4) (4 5) 
+(5 1) (5 2) (5 3) (5 4) (5 5) 
+
+```
 <h3 id='references'>References</h3>
 
 The following are the list of urls of websites where you can go and try to learn & clear concepts of Golang.
