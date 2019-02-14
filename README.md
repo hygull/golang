@@ -668,18 +668,9 @@ func main() {
 
 > Output
 
-    Rishikeshs-MacBook-Air:basic hygull$ go run interfaces.go 
-    {{Malinikesh Agrawani 22 [Reading Books Watching TV Cooking]} Govt. Nagarjuna Science college, Raipur}
-    Fullname: Malinikesh Agrawani
-    Age: 22
-    Interests: [Reading Books Watching TV Cooking]
-    School:  Govt. Nagarjuna Science college, Raipur 
+Please have a look at [this](./docs/markdowns/interfaces-output.txt) to view the output.
 
-    {{Raghvendra Thakur 26 [Programming Reading Books Watching animated movies Writing hindi/english poems]} 5e+06}
-    Fullname: Raghvendra Thakur
-    Age: 26
-    Interests: [Programming Reading Books Watching animated movies Writing hindi/english poems]
-    Salary:  5e+06
+**Note:** The main reason to place the oupput fo this program is to pass the tests made by Github pages. The output contains 2 left curley braces which becomes the reason for failure in the tests performed by Github pages.
 
 
 <h3 id="maps">Working with maps in Golang</h3>
