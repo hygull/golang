@@ -733,7 +733,7 @@ Bangalore
 
 | Arrays & slices (example 1) | Arrays & slices (example 2)|
 | --- | --- |
-| ![arrays-example1.png](./images/arrays.png) | ![arrays-example2.png](./godata3-arrays.png) |
+| ![arrays-example1.png](./images/arrays.png) | ![arrays-example2.png](./images/godata3-arrays.png) |
 
 ```go
 /**
@@ -1051,3 +1051,5 @@ These are really excellent to teach and make you understand Go as I have experie
 - [x] Top 30 Go tutorials - [https://stackify.com/learn-go-tutorials/](https://stackify.com/learn-go-tutorials/)
 
 - [x] Append strings in Golang - [https://christopher.su/notes/go/append-strings/](https://christopher.su/notes/go/append-strings/)
+
+- [x] Arrays - [https://tour.golang.org/moretypes/6](https://tour.golang.org/moretypes/6)
