@@ -224,6 +224,7 @@ I am in ground floor
 ```
 
 <h3 id="struct">Working with structure in Golang</h3>
+
 | struct | struct pointer |
 | --- | --- |
 | ![Struct](./images/struct.jpg) | ![Struct](./images/golang-struct.jpg) |
