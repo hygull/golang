@@ -222,6 +222,100 @@ My first name Rishikesh contains less than 9 characters
 I am in ground floor
 
 ```
+
+<h3 id="struct">Working with structure in Golang</h3>
+| struct | struct pointer |
+| --- | --- |
+| ![Struct](./images/struct.jpg) | ![Struct](./images/golang-struct.jpg) |
+
+```go
+/**
+    {
+        "created": "16 Feb 2019, Sat",
+        "aim": "Working with structure in Golang",
+        "codedBy": "Rishikesh Agrawani",
+        "reference": "http://www.golangprograms.com/how-to-get-struct-variable-information-using-reflect-package.html"
+    }
+*/
+
+package main
+
+import "fmt"
+import "reflect"
+
+// Defining a structure named Car to define the structure of car object
+
+// Note: Make sure you have already capitalized struct filed names
+// It's for iterating over it, and using Interface() method will cause error, if names are not capitalized
+// eg. panic: reflect.Value.Interface: cannot return value obtained from unexported field or method
+// (If we used 'name' in place of 'Name')
+type Car struct {
+    Name string             
+    Wheels int8             
+    Price float64
+    Color string
+    Models []string
+    PriceOptions []float64
+    OfficialWebsite string
+}
+
+func main() {
+    // - Create a structure object
+    // - Even the data are not in order (below) as they appear (above)
+    // but final output will follow the order defined its structure  
+    bugatti := Car{
+        Name: "Bugatti",
+        Wheels: 4, // 4 will be of type int8 (here)
+        Price: 40000000.58,
+        PriceOptions: []float64{120, 130, 500},
+        Color: "Red",
+        Models: []string{"Type 57 SC Atlantic", "Type 41 Royale", "Vision Gran Turismo", "Chiron"},
+        OfficialWebsite: "https://www.bugatti.com/home/",
+    }
+
+    // Printing structure
+    fmt.Println(bugatti)
+
+    // Accessing structure
+    fmt.Println(bugatti.Name) // Bugatti
+
+    // Checcking type
+    fmt.Println(reflect.TypeOf(bugatti.Wheels)) // int8
+
+    // Iterating over field of struct in Golang
+    elem := reflect.ValueOf(&bugatti).Elem()
+    fmt.Println("Elem: ", elem, "\n")
+
+    for i := 0; i < elem.NumField(); i++ {
+        name := elem.Type().Field(i).Name 
+        typ := elem.Type().Field(i).Type 
+        value := elem.Field(i).Interface()
+
+        fmt.Println("Name:", name, "Type:", typ, "Value:", value)
+    }
+}
+
+```
+
+> Output
+
+```bash
+Rishikeshs-MacBook-Air:basic hygull$ go run struct.go 
+{Bugatti 4 4.000000058e+07 Red [Type 57 SC Atlantic Type 41 Royale Vision Gran Turismo Chiron] [120 130 500] https://www.bugatti.com/home/}
+Bugatti
+int8
+Elem:  {Bugatti 4 4.000000058e+07 Red [Type 57 SC Atlantic Type 41 Royale Vision Gran Turismo Chiron] [120 130 500] https://www.bugatti.com/home/} 
+
+Name: Name Type: string Value: Bugatti
+Name: Wheels Type: int8 Value: 4
+Name: Price Type: float64 Value: 4.000000058e+07
+Name: Color Type: string Value: Red
+Name: Models Type: []string Value: [Type 57 SC Atlantic Type 41 Royale Vision Gran Turismo Chiron]
+Name: PriceOptions Type: []float64 Value: [120 130 500]
+Name: OfficialWebsite Type: string Value: https://www.bugatti.com/home/
+
+```
+
 <h3 id='5'>Working with loops (3 basic forms)</h3>
 
 ```go
@@ -1053,3 +1147,7 @@ These are really excellent to teach and make you understand Go as I have experie
 - [x] Append strings in Golang - [https://christopher.su/notes/go/append-strings/](https://christopher.su/notes/go/append-strings/)
 
 - [x] Arrays - [https://tour.golang.org/moretypes/6](https://tour.golang.org/moretypes/6)
+
+- [x] 2D arrays - [https://gobyexample.com/arrays](https://gobyexample.com/arrays)
+
+- [x] Getting information about struct variable in Go - [http://www.golangprograms.com/how-to-get-struct-variable-information-using-reflect-package.html](http://www.golangprograms.com/how-to-get-struct-variable-information-using-reflect-package.html)
