@@ -1,5 +1,7 @@
 # Golang
 
+> **Note** Have a look at [Research & Development](./research_and_development) work too once you are done with the basic.
+
 + is a general purpose, statically typed, strongly typed programming language.
 
 + was initially developed at Google in year 2007 by Robert Griesemer, Rob Pike & Ken Thompson.
