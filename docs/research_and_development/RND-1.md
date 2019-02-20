@@ -60,7 +60,7 @@ func main() {
 
 > Output
 
-![RND-1-Structure-20-Feb-2019-Wed.png](../images/RND-1-Structure-20-Feb-2019-Wed.png)
+![RND-1-Structure-20-Feb-2019-Wed.png](../../images/RND-1-Structure-20-Feb-2019-Wed.png)
 
 OR
 

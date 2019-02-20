@@ -1,12 +1,12 @@
 # Golang
 
-> **Note** Have a look at [Research & Development](./research_and_development) work too once you are done with the basic.
-
 + is a general purpose, statically typed, strongly typed programming language.
 
 + was initially developed at Google in year 2007 by Robert Griesemer, Rob Pike & Ken Thompson.
 
 + provides inbuilt support for Garbage collection and supports concurrent programming.
+
+> **Note:** Have a look at [Research & Development](./docs/research_and_development) work once you are done with the basic.
 
 <h2 id='features'> Features</h2> 
 
