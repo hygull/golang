@@ -1,10 +1,10 @@
-<h3>A quick look at the working nature of Marshal() with structure</h3>
+<h3>A quick look at the working nature of json.Marshal() with structure</h3>
 
 ```go
 /**
 	{
 		"created": "20 Feb 2019, Wed",
-		"aim": "A quick look at the working nature of Marshal() with structure",
+		"aim": "A quick look at the working nature of json.Marshal() with structure",
 		"codedBy": "Rishikesh Agrawani"
 	}
 */
